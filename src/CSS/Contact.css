@@ -1,0 +1,39 @@
+.contact-page{
+    width: 80%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 25px;
+}
+.contact-page h1{
+    margin: 0;
+    padding: 0;
+    /* color: #CCD6F6; */
+}
+.contact-text{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    font-size: larger;
+    color: #828DAA;
+}
+.contact-button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+    border: 2px solid #64FFDA;
+    border-radius: 10px;
+    margin-top: 25px;
+    position: relative;
+}
+.contact-button:hover{
+    transition: 0.5s all ;
+    margin-top: 15px;
+    box-shadow: 5px 5px #64FFDA;
+}

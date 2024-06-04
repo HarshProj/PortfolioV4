@@ -1,0 +1,344 @@
+.homepage{
+    width: 100%;
+    height: 100%;
+  /* position: fixed; */
+}
+.homepage span{
+    color: #76747A;
+
+}
+.nav{
+    width: 100%;
+    height:100%;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.navd{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 11;
+    justify-content: space-between;
+
+}
+/* .logo img {
+    height: 20px;
+    width: 30px;
+} */
+.logo {
+    width: 195px;
+    height: 110px;
+    overflow: hidden;
+  }
+  
+  .logo img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+.hire{
+    padding-left: 1rem;
+}
+.links{
+    display: flex;
+    gap: 6rem;
+    padding-right: 2rem;
+}
+.links :active{
+    background-color: gray;
+}
+.navigate{
+    color: #76747A;
+    transition: all 0.5s;
+}
+.navigate:hover{
+    color: orange;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    /* background-color: aqua; */
+}
+
+.image img{
+    border-bottom-right-radius: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+}
+
+.activity{
+    display: flex;
+    width: 100%;
+    padding-top: 4rem;
+    justify-content: space-between;
+    height: 30vh;
+}
+.box{
+    width: 20%;
+    height: 14vh;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+}
+.tasks{
+    display: flex;
+    color: #76747A;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tasks h3{
+    color: black;
+}
+.box i{
+    font-size: 1.4rem;
+}
+.candidateinfo{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* justify-content: space-between; */
+    /* grid-row: inherit; */
+    
+}
+
+.cont{
+    width: 30%;
+    height: 10vh;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: #fff;
+    padding-right: 2rem;
+
+    transition: all 1s;
+}
+.barn{
+    padding-top: 2rem;
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;   
+}
+.b1{
+    animation: example2 3s ease-out  1  ;
+    
+}
+.b2{
+    animation: example3 3s ease-in  1  ;
+
+}
+@keyframes example2 {
+    0% {left: 100%;}
+        100%{left: 0%;}
+
+    }
+@keyframes example3 {
+    0% {left: -100%;}
+        100%{left: 0%;}
+
+    }
+.candidateimg{
+    width: 10%;
+    height: 7vh;
+    background-size: cover;
+}
+.skills{
+    display: flex;
+    height: 10px;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.status {
+    background-color: #15af15;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.8s;
+}
+.status:hover{
+    font-size: large;
+    box-shadow: 5px 5px 2px gray;
+}
+.cont:nth-child(3){
+        .status{
+            background-color: red;
+        }
+}
+.cont:hover{
+    /* width: 33%; */
+    box-shadow: 5px 5px 5px black ;
+}
+.contactpage{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../Images/img1.jpg'); */
+    background-size: cover;
+    gap: 5rem;
+    color: #c4c4c4;
+    /* border-radius: 10rem; */
+}
+.handles{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+/* .desc{
+    
+} */
+.handles i{
+    font-size: x-large;
+    transition: all 0.5s;
+    animation: example 2s ease-in 2s;
+}
+.blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.tran:hover{
+    transform: rotate(90deg);
+    font-size: xxx-large;
+}
+.toggle{
+    display: none;
+}
+.contactpage span{
+    font-size: larger;
+    animation: example 2s ease-out 2s;
+}
+.desc h1{
+    animation: example 2s ease-in-out 2s;
+
+}
+.togglemenu{
+    display: none;
+}
+.close{
+    display: none;
+}
+@keyframes example {
+    0% {padding-bottom: 35rem;}
+    30% {padding-bottom: 0rem;}
+    60% {padding-bottom: 25rem;}
+        75% {padding-bottom: 0rem;}
+        85%{padding-bottom: 10rem;}
+        100%{padding-bottom: 0rem;}
+
+    }
+
+    @media only screen and (max-width:722px) {
+        .image {
+            display: none;
+        }
+        .toggle{
+            display: block;
+            position: absolute;
+            right: 2rem;
+            font-size: xx-large;
+        }
+        .close{
+            display: none;
+        }
+        .text{
+            align-items: center;
+            /* height: 100%; */
+        }
+        .innernav{
+            height: 100%;
+        }
+        .box{
+            width: 100%;
+        }
+        .quote{
+            width: 80%;
+        }
+        .links{
+            display: none;
+        }
+        .navd{
+            justify-content: center;
+        }
+        .activity{
+            flex-direction: column;
+            height: 70vh;
+        }
+        .barn{
+            flex-direction: column;
+        }
+        .cont{
+            width: 100%;
+            padding-right: 0;
+        }
+        .candidateinfo{
+            height: 90vh;
+        }
+        .contactpage{
+            gap: 2rem;
+            flex-direction: column;
+        }
+        .handles{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .togglemenu{
+            display: flex;
+            opacity: 0.5;
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            padding-top: 10rem;
+            gap: 5rem;
+            z-index: 1;
+            flex-direction: column;
+           
+        }
+        .comp{
+            font-size: xx-large;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .navigate:hover{
+            font-size: xxx-large;
+            
+        }
+        
+        .toggle2{
+            position: absolute;
+            color: white;
+            right: 2rem;
+            top: 1rem;
+            font-size: xx-large;
+        }
+    }
+    .handles a{
+        color: gray;
+    }

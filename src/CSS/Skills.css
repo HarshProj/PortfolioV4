@@ -1,0 +1,98 @@
+.Skills-box{
+    width: 50%;
+    height: 100%;
+    padding-top: 20px;
+}
+.aboutdiv{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.rank div:hover{
+    box-shadow: black 5px 5px 15px;
+    /* width: 25%; */
+    transition: box-shadow 0.5s ease-in;
+}
+.rank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 4rem; */
+    justify-content: center;
+    width: 33%;
+    /* height: 30%; */
+}
+.rank div{
+    /* border:1px solid black; */
+    border-radius: 15px 5px;
+    background-size: cover;
+}
+#skill1{
+    background-image: url("../Assets/c-.png");
+
+}
+#skill2{
+    background-image: url("../Assets/letter-c.png");
+
+}
+#skill3{
+    background-image: url("../Assets/mongodb.png");
+
+}
+#skill4{
+    background-image: url("../Assets/html.png");
+
+}
+#skill5{
+    background-image: url("../Assets/css.png");
+
+}
+#skill6{
+    background-image: url("../Assets/js.png");
+
+}
+#skill7{
+    background-image: url("../Assets/physics.png");
+    opacity: 1;
+    /* background: black; */
+
+}
+#skill8{
+    background-image: url("../Assets/nodejs\ \(2\).png");
+    opacity: 1;
+    /* background: black; */
+
+}
+
+.lang{
+    display: block;
+    width: 8rem;
+    height:8rem;
+}
+
+@media screen and (max-width:845px){
+    .lang{
+        width: 5rem;
+        height: 5rem;
+    }
+   .rank{
+    width: 50%;
+   }
+    #coder{
+        display: 
+        none;
+    }
+    .navd ul{
+        gap: 0;
+    }
+    #animation a{
+        display: none;
+    }
+    .project{
+        /* flex-direction: row; */
+        width: 70%;
+    }
+}
