@@ -11,7 +11,7 @@ export const Work = () => {
    <div className="work-box">
     <div className="work-section">
 
-   <div className="about-h1"><h1>Some Things I've Built</h1> <hr className='about-hr'/></div>
+   <div className="about-h1"><h1>Some Things I've Built</h1><hr className='about-hr'/></div>
    <div className="project">
     <div className="img-div">
       <img src={p2} alt="" className='img-project'/>
