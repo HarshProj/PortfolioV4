@@ -211,3 +211,48 @@ grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
+@media only screen and (max-width:712px){
+    
+    .des , .project-desc{
+        z-index: 0;
+        width: 88%;
+        box-shadow: none;
+        left: 15px;
+        font-size: larger;
+        background:none ;
+    }
+    .tech-used-p2,.tech-used{
+        justify-content: center;
+        padding-right: 0;
+    }
+    .work-section{
+        width: 85%;
+    }
+    .project-title-p2,.project-title{
+        align-items: center ;
+    }
+    .about-hr{
+        display: none;
+    }
+    .contact-text{
+        width: 100%;
+    }
+    .img-div{
+        position: absolute;
+        opacity: 0.5;
+        width: 100%;
+    }
+    .project-info{
+        width: 100%;
+        z-index: 0;
+    }
+    #handles{
+        width: 88%;
+    }
+    .img-div img{
+        opacity: 0.5;
+    }
+    .img-div img:hover{
+        opacity: none;
+    }
+}

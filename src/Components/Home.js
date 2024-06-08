@@ -31,7 +31,7 @@ export const Home = () => {
                     <hr className='hr'/>
 
                     <div className="about-me">
-                        <div className="about-section">
+                        <div id="absec"className="about-section">
                             <div className="about-h1"><h1 className=''>About-me
                             </h1> <hr className='about-hr'/></div>
                         
@@ -45,7 +45,7 @@ export const Home = () => {
             </div>
             <hr />
             <div className="contact-handles" >
-                <h1>Contact Handles</h1>
+                <h1 className='contact-h1'>Contact Handles</h1>
                 <ul className='contact-ul' id='handles'>
                     <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class="social-link"><img src="https://uploads-ssl.webflow.com/5ec440af4659932990a1020c/60f17a27f09c3f1f0df7ef59_icon%20(1).svg" loading="lazy" alt="LinkedIn logo" /></a>
                     </li>

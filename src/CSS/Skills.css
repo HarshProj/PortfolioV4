@@ -78,6 +78,9 @@
         width: 5rem;
         height: 5rem;
     }
+    .Skills-box{
+        width: 85%;
+    }
    .rank{
     width: 50%;
    }
@@ -95,4 +98,5 @@
         /* flex-direction: row; */
         width: 70%;
     }
+    
 }
