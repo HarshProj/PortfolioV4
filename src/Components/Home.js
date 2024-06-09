@@ -25,12 +25,12 @@ export const Home = () => {
                         <span className='greet'>Hey there ,my name is</span>
                         <h1>Harsh Chauhan</h1>
                         <h1>I am a web Developer</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto, doloremque odit repudiandae voluptas natus?</p>
+                        <p>I leverage cutting-edge technologies to craft robust and dynamic web experiences.  I am proficient in various frameworks and possess a keen eye for clean, maintainable code. </p>
                     </div>
                 </div>
                     <hr className='hr'/>
 
-                    <div className="about-me">
+                    <div className="about-me" id='abot'>
                         <div id="absec"className="about-section">
                             <div className="about-h1"><h1 className=''>About-me
                             </h1> <hr className='about-hr'/></div>

@@ -84,6 +84,9 @@
     p{
         line-height: 35px;
     }
+    #abot{
+        height: 100%;
+    }
 }
 .github{
     color: #D0D5DB;

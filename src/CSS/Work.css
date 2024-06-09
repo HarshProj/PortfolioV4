@@ -75,25 +75,27 @@ body{
 }
 .project-desc{
     width: 55%;
-    height: 17vh;
+    /* height: 17vh; */
     position: absolute;
     top: 30%;
     z-index: 11;
     right: 0;
     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
     padding: 10px;
+    padding-bottom: 30px;
     background-color: #ffff;
     border-radius: 4px;
 }
 .des{
     width: 55%;
-    height: 17vh;
+    /* height: 17vh; */
     position: absolute;
     top: 30%;
     z-index: 11;
     left: 0;
     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
     padding: 10px;
+    padding-bottom: 30px;
     background-color: #ffff;
     border-radius: 4px;
 }
@@ -152,6 +154,8 @@ grid-template-columns: 1fr 1fr 1fr;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 .project-folder{
     width: 90%;
@@ -214,16 +218,21 @@ grid-template-columns: 1fr 1fr 1fr;
 @media only screen and (max-width:712px){
     
     .des , .project-desc{
-        z-index: 0;
+        z-index: 2;
         width: 88%;
         box-shadow: none;
         left: 15px;
         font-size: larger;
         background:none ;
     }
+    #mip{
+        padding-left: 20px;
+        height: 100%;
+    }
     .tech-used-p2,.tech-used{
         justify-content: center;
         padding-right: 0;
+        gap: 1rem;
     }
     .work-section{
         width: 85%;
@@ -244,7 +253,7 @@ grid-template-columns: 1fr 1fr 1fr;
     }
     .project-info{
         width: 100%;
-        z-index: 0;
+        z-index: 2;
     }
     #handles{
         width: 88%;
@@ -254,5 +263,20 @@ grid-template-columns: 1fr 1fr 1fr;
     }
     .img-div img:hover{
         opacity: none;
+    }
+    .go-through ,.go-through-p2{
+        justify-content: start;
+        padding-left: 32px;
+        width: 80%;
+        height: 0;
+    }
+    .project p{
+        font-size: medium;
+    }
+    
+}
+@media only screen and (max-height:668px){
+   .project{
+        height: 65vh;
     }
 }

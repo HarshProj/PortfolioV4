@@ -26,8 +26,8 @@ export const Navbar = () => {
     <div id='cl' className={close}>
       <div className="toggle" onClick={updatemenu} ><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
     <div className="comp"><Link to="./" className='navigate' style={{textDecoration:'none'}}>Home</Link></div>
-          <div className="comp"><Link to='./candidates' className='navigate' style={{textDecoration:'none'}}>Candidates</Link></div>
-          <div className="comp"><Link to='./login' className='navigate' style={{textDecoration:'none'}}>Login</Link>/<Link to='./signup' style={{textDecoration:'none'}} className='navigate'>Sign up</Link></div>
+          <div className="comp"><Link to='./about' className='navigate' style={{textDecoration:'none'}}>About</Link></div>
+          <div className="comp"><Link to='./skills' className='navigate' style={{textDecoration:'none'}}>Skills</Link>/<Link to='./projects' style={{textDecoration:'none'}} className='navigate'> Projects</Link></div>
     </div>
     <div className="nav">
       <div className="navd">
@@ -36,8 +36,8 @@ export const Navbar = () => {
         </div>
         <div className="links">
           <div className="comp"><Link to="./" className='navigate' style={{textDecoration:'none'}}>Home</Link></div>
-          <div className="comp"><Link to='./candidates' className='navigate' style={{textDecoration:'none'}}>Candidates</Link></div>
-          <div className="comp b12"><Link to='./login' className='navigate' style={{textDecoration:'none'}}>Login</Link>/<Link to='./signup' style={{textDecoration:'none'}} className='navigate'>Sign up</Link></div>
+          <div className="comp"><Link to='./about' className='navigate' style={{textDecoration:'none'}}>About</Link></div>
+          <div className="comp b12"><Link to='./skills' className='navigate' style={{textDecoration:'none'}}>Skills</Link>/<Link to='./projects' style={{textDecoration:'none'}} className='navigate'>Projects</Link></div>
         </div>
         <div className={open}onClick={updatemenu} id='cl2'><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
       </div>
