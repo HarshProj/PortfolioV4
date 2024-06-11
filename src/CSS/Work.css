@@ -7,6 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* z-index: -1; */
 }
 .work-section{
     width: 60%;
@@ -29,7 +30,7 @@ body{
     background-color: #a3a3c7;
     height: 100%;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     /* background-image: url('../Assets/bl.PNG'); */
     border-radius: 5px;
     /* filter: blur(2px); */
@@ -53,7 +54,7 @@ body{
 .project-info{
     width: 40%;
     /* border: 2px solid red; */
-    z-index: 10;
+    /* z-index: 10; */
     height: 100%;
     display:flex;
     flex-direction: column;
@@ -78,25 +79,27 @@ body{
     /* height: 17vh; */
     position: absolute;
     top: 30%;
-    z-index: 11;
+    /* z-index: 11; */
     right: 0;
     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
     padding: 10px;
     padding-bottom: 30px;
-    background-color: #ffff;
+    /* background-color: #ffff; */
+    background-color: #112240;
     border-radius: 4px;
-}
-.des{
-    width: 55%;
-    /* height: 17vh; */
+    }
+    .des{
+        width: 55%;
+        /* height: 17vh; */
+        background-color: #112240;
     position: absolute;
     top: 30%;
-    z-index: 11;
+    z-index: 1;
     left: 0;
     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
     padding: 10px;
     padding-bottom: 30px;
-    background-color: #ffff;
+    /* background-color: #ffff; */
     border-radius: 4px;
 }
 .source-code{
@@ -139,10 +142,10 @@ li{
 .i1 ,.pi,.des{
     transform: rotateY(-150deg);
 } */
+
 .small-projects{
 display: grid;
 gap: 1rem;
-
 grid-template-columns: 1fr 1fr 1fr;
 }
 .project-card{
@@ -169,7 +172,7 @@ grid-template-columns: 1fr 1fr 1fr;
     height: 58%;
 }
 .project-details p{
-    color: gray;
+    color: #8892B0;
 }
 
 .te1{
@@ -182,7 +185,8 @@ grid-template-columns: 1fr 1fr 1fr;
     padding-right: 0;
 }
 .te1 span{
-    color: gray;
+    /* color: gray; */
+    color: #8892B0;
     font-size: small;
 }
 .folder{
@@ -201,7 +205,8 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 .project-link  a{
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: #CCD6F6;
 }
 .project-card :hover{
     a{

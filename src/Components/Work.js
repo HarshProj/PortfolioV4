@@ -1,7 +1,7 @@
 import React from 'react'
 import '../CSS/Work.css'
 import githublogo from '../Assets/github.png'
-import p1 from '../Assets/bl.PNG'
+import p1 from '../Assets/arczone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from '@fortawesome/fontawesome-free-solid'
 import p2 from '../Assets/text.PNG'
@@ -14,7 +14,7 @@ export const Work = () => {
    <div className="about-h1"><h1>Some Things I've Built</h1><hr className='about-hr'/></div>
    <div className="project">
     <div className="img-div">
-      <img src={p2} alt="" className='img-project'/>
+      <img src={p1} alt="" className='img-project'/>
     </div>
     <div className="project-info">
       <div className="project-title">
@@ -45,7 +45,7 @@ export const Work = () => {
     <div className="project-info pi">
       <div className="project-title project-title-p2">
         <p>Featured Project </p>
-        <h1>Arc Zone</h1>
+        <h1>Inotebook</h1>
       </div>
       <div className="source-code">
        <div className="tech-used tech-used-p2">
@@ -65,7 +65,7 @@ export const Work = () => {
       This innovative to-do list application empowers users to conquer their daily tasks with a feature-rich and user-friendly interface.  Built with a focus on efficiency and organization.
       </div>
       <div className="img-div i1">
-      <img src={p1} alt="" className='img-project'/>
+      <img src={p2} alt="" className='img-project'/>
     </div>
    </div>
    <div className="about-h1"><h1>Other Noteworthy Projects</h1> <hr className='about-hr'/>

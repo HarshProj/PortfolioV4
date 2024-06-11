@@ -1,17 +1,27 @@
+
 .intro-sec{
     width: 100%;
-    height: 80vh;
+    height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+.cursor{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    z-index: 20;
+    top: 100px;
+}
 .intro-div{
     width: 40%;
 }
-.intro-div p{
-    font-family: cursive;
-    color: gray;
+
+.intro-div p ,.field{
+    /* font-family: cursive; */
+    /* color: gray; */
+    color: #8892B0;
 }
 .greet{
     font-family: cursive;
@@ -64,6 +74,12 @@
         height: 100%;
 
     }
+    .cursor{
+        display: none;
+    }
+    .intro-sec{
+        height: 100vh;
+    }
     .contact-h1{
         display: block;
     }
@@ -108,6 +124,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    
 }
 .about-me{
     height: 50vh;
@@ -118,7 +135,8 @@
     /* border: 2px solid black; */
 }
 .about-me p{
-    color: gray;
+    /* color: gray; */
+    color: #8892B0;
 }
 .about-section{
     width: 60%;
@@ -126,6 +144,9 @@
 p{
     /* color: gray; */
     font-size: larger;
+}
+.folder{
+    color:#64FFDA
 }
 .about-h1{
     display: flex;

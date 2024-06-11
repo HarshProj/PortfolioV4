@@ -23,13 +23,13 @@ export const Navbar = () => {
    }
   return (
     <div className='homepage'>
+    <div className="nav">
     <div id='cl' className={close}>
-      <div className="toggle" onClick={updatemenu} ><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
+      <div  className={close} onClick={updatemenu} ><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
     <div className="comp"><Link to="./" className='navigate' style={{textDecoration:'none'}}>Home</Link></div>
           <div className="comp"><Link to='./about' className='navigate' style={{textDecoration:'none'}}>About</Link></div>
           <div className="comp"><Link to='./skills' className='navigate' style={{textDecoration:'none'}}>Skills</Link>/<Link to='./projects' style={{textDecoration:'none'}} className='navigate'> Projects</Link></div>
     </div>
-    <div className="nav">
       <div className="navd">
         <div className="logo">
           <img src={logo} alt="" />

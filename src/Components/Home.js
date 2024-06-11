@@ -5,7 +5,7 @@ import githublogo from '../Assets/github.png'
 import { Work } from './Work'
 import { Contact } from './Contact'
 export const Home = () => {
-   
+
         useEffect(() => {
             const onScroll = () => {
                 const scrollCheck = window.scrollY < 10
@@ -16,15 +16,14 @@ export const Home = () => {
         }, [])
         
     return (
-        <>
-                
-                
+        <>  
+                <div className="cursor"></div>
             <div className="home-box">
                 <div className="intro-sec">
                     <div className="intro-div">
                         <span className='greet'>Hey there ,my name is</span>
                         <h1>Harsh Chauhan</h1>
-                        <h1>I am a web Developer</h1>
+                        <h1 className='field'>I am a web Developer</h1>
                         <p>I leverage cutting-edge technologies to craft robust and dynamic web experiences.  I am proficient in various frameworks and possess a keen eye for clean, maintainable code. </p>
                     </div>
                 </div>
