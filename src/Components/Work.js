@@ -22,14 +22,14 @@ useEffect(()=>{
     <div className="work-section">
 
    <div className="about-h1"><h1>Some Things I've Built</h1><hr className='about-hr'/></div>
-   <div className="project">
+   <div className="project" onClick={()=>{window.open("https://github.com/HarshProj/Arc-Zone-client-side.git" , "_blank");}}>
     <div className="img-div">
       <img src={p1} alt="" className='img-project'/>
     </div>
     <div className="project-info">
       <div className="project-title">
         <p>Featured Project </p>
-        <h1>Arc Zone</h1>
+        <a href="">        <h1>Arc Zone</h1></a>
       </div>
       <div className="source-code">
        <div className="tech-used">
@@ -39,8 +39,8 @@ useEffect(()=>{
         <p>Express</p>
        </div>
        <div className="go-through">
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div>
       </div>
@@ -50,12 +50,12 @@ useEffect(()=>{
       </div>
       
    </div>
-   <div id ="pp1"className="project p1">
+   <div id ="pp1"className="project p1" onClick={()=>{window.open("https://github.com/HarshProj/inotebook.git" , "_blank");}}>
    
-    <div className="project-info pi">
+    <div className="project-info pi"  >
       <div className="project-title project-title-p2">
         <p>Featured Project </p>
-        <h1>Inotebook</h1>
+       <a href="https://github.com/HarshProj/inotebook.git"><h1>Inotebook</h1></a> 
       </div>
       <div className="source-code">
        <div className="tech-used tech-used-p2">
@@ -65,8 +65,8 @@ useEffect(()=>{
         <p>Express</p>
        </div>
        <div className="go-through go-through-p2">
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div>
       </div>
@@ -82,7 +82,7 @@ useEffect(()=>{
    </div>
    
    <div className="small-projects">
-   <div className="project-card" onClick={()=>{window.open("http://google.com", "_blank");}}><div className="project-folder">
+   <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/Authentication.git" , "_blank");}}><div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip' className="go-through mp">
@@ -93,7 +93,7 @@ useEffect(()=>{
       </div>
     <div className='project-details'>
       <h3 className='project-link'>
-        <a href="https://google.com" target='_blank'>Authentication</a>
+        <a href="https://github.com/HarshProj/Authentication.git" target='_blank'>Authentication</a>
       </h3>
       <p>
       This Authentication App ensures secure user authentication and email verification. It efficiently manages user details using a modern tech stack.
@@ -102,20 +102,20 @@ useEffect(()=>{
         <span>Vite js</span>
         <span>MongoDB</span>
         <span>Nodejs</span>
-        <span>Express</span>
+        <span>Justand</span>
        </div></div>
-    <div className="project-card" onClick={()=>{window.open("http://google.com", "_blank");}}><div className="project-folder">
+    <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/Bharat-Intern-Task-II.git", "_blank");}}><div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
        <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div></div>
       </div>
     <div className='project-details'>
       <h3 className='project-link'>
-        <a href="https://google.com" target='_blank'>Blog App</a>
+        <a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" target='_blank'>Blog App</a>
       </h3>
       <p>
       This Blog App allows users to securely create, read, update, and delete blog posts, upload content, and interact with others, offering a robust platform for content sharing.
@@ -126,18 +126,18 @@ useEffect(()=>{
         <span>Nodejs</span>
         <span>Express</span>
        </div></div>
-       <div className="project-card" onClick={()=>{window.open("http://google.com", "_blank");}}><div className="project-folder">
+       <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/FreeCode.git", "_blank");}}><div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div></div>
       </div>
     <div className='project-details'>
       <h3 className='project-link'>
-        <a href="https://google.com" target='_blank'>FreeCode</a>
+        <a href="https://github.com/HarshProj/FreeCode.git" target='_blank'>FreeCode</a>
       </h3>
       <p>
       This Code Compiler and Problem-Solving App enables users to write, compile, and run code in multiple programming languages.
@@ -147,12 +147,12 @@ useEffect(()=>{
         <span>codemirror</span>
         <span>JS</span>
        </div></div>
-    <div className="project-card" onClick={()=>{window.open("http://google.com", "_blank");}}><div className="project-folder">
+    <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/News-app.git", "_blank");}}><div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div></div>
       </div>

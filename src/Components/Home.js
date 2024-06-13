@@ -46,13 +46,13 @@ export const Home = (props) => {
             <div className="contact-handles" >
                 <h1 className='contact-h1'>Contact Handles</h1>
                 <ul className='contact-ul' id='handles'>
-                    <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class="social-link"><img src="https://uploads-ssl.webflow.com/5ec440af4659932990a1020c/60f17a27f09c3f1f0df7ef59_icon%20(1).svg" loading="lazy" alt="LinkedIn logo" /></a>
+                    <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' class="social-link"><img src="https://uploads-ssl.webflow.com/5ec440af4659932990a1020c/60f17a27f09c3f1f0df7ef59_icon%20(1).svg" loading="lazy" alt="LinkedIn logo" /></a>
                     </li>
-                    <li> <a href="https://instagram.com/hharshchauhan1?igshid=ZDdkNTZiNTM=" class="social-link"><img src="https://uploads-ssl.webflow.com/5ec440af4659932990a1020c/60f17a27f09c3f768ef7ef57_icon%20(3).svg" loading="lazy" alt="Instagram logo" /></a></li>
+                    <li> <a href="https://instagram.com/hharshchauhan1?igshid=ZDdkNTZiNTM=" target='_blanck' class="social-link"><img src="https://uploads-ssl.webflow.com/5ec440af4659932990a1020c/60f17a27f09c3f768ef7ef57_icon%20(3).svg" loading="lazy" alt="Instagram logo" /></a></li>
 
-                    <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class="social-link git"><img className='github' src={githublogo} loading="lazy" /></a></li>
+                    <li><a href="https://github.com/HarshProj" class="social-link git" target='_blanck'><img className='github' src={githublogo} loading="lazy" /></a></li>
 
-                    <li><a href="/" class="social-link"><img src="https://uploads-ssl.webflow.com/5ec440af4659932990a1020c/60f17a27f09c3fa670f7ef56_icon%20(4).svg" loading="lazy" alt="Twitter logo" /></a></li>
+                    <li><a href="https://x.com/HarshChauh84647" class="social-link" target='_blanck'><img src="https://uploads-ssl.webflow.com/5ec440af4659932990a1020c/60f17a27f09c3fa670f7ef56_icon%20(4).svg" loading="lazy" alt="Twitter logo" /></a></li>
                 </ul>
                 
                     <div className="vertical-line">
