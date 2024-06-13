@@ -11,7 +11,7 @@
     position: absolute;
     width: 80%;
     height: 100%;
-    z-index: 20;
+    z-index: 4;
     top: 100px;
 }
 .intro-div{
@@ -27,7 +27,8 @@
     font-family: cursive;
     /* color: #5DEFCE; */
     
-    color: crimson;
+    /* color: crimson; */
+    color:#64FFDA
 }
 .contact-handles{
     position: fixed;
@@ -100,10 +101,11 @@
     p{
         line-height: 35px;
     }
-    #abot{
+    #about{
         height: 100%;
     }
 }
+
 .github{
     color: #D0D5DB;
 }

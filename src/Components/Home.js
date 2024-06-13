@@ -4,7 +4,7 @@ import {Skills} from './Skills'
 import githublogo from '../Assets/github.png'
 import { Work } from './Work'
 import { Contact } from './Contact'
-export const Home = () => {
+export const Home = (props) => {
 
         useEffect(() => {
             const onScroll = () => {
@@ -29,7 +29,7 @@ export const Home = () => {
                 </div>
                     <hr className='hr'/>
 
-                    <div className="about-me" id='abot'>
+                    <div className="about-me" id='about'>
                         <div id="absec"className="about-section">
                             <div className="about-h1"><h1 className=''>About-me
                             </h1> <hr className='about-hr'/></div>
@@ -38,8 +38,8 @@ export const Home = () => {
                         </div>
                     </div>
                     <hr className='hr'></hr>
-                        <Skills/>
-                        <Work/>
+                        <Skills />
+                        <Work to={props.to}/>
                         <Contact/>
             </div>
             <hr />

@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../CSS/Work.css'
 import githublogo from '../Assets/github.png'
 import p1 from '../Assets/arczone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from '@fortawesome/fontawesome-free-solid'
 import p2 from '../Assets/text.PNG'
-export const Work = () => {
+export const Work = (props) => {
+useEffect(()=>{
+  if(props.to){
+    document.getElementsByClassName('project-desc')[0].style.backgroundColor='#0A192F';
+    document.getElementsByClassName('des')[0].style.backgroundColor='#0A192F';
+    }
+    else{
+      document.getElementsByClassName('project-desc')[0].style.backgroundColor='#ffff';
+      document.getElementsByClassName('des')[0].style.backgroundColor='#ffff';
+  }
+},[props.to])
   return (
    <>
    <div className="work-box">
