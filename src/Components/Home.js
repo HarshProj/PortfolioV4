@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import '../CSS/Home.css'
 import {Skills} from './Skills'
 import githublogo from '../Assets/github.png'
@@ -14,7 +14,14 @@ export const Home = (props) => {
                 }
             }
         }, [])
-        
+        const onTabDefault1Click = useCallback(() => {
+            const anchor = document.querySelector(
+              "[data-scroll-to='projectsContainer']"
+            );
+            if (anchor) {
+              anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+            }
+          }, []);
     return (
         <>  
                 <div className="cursor"></div>
@@ -29,7 +36,7 @@ export const Home = (props) => {
                 </div>
                     <hr className='hr'/>
 
-                    <div className="about-me" id='about'>
+                    <div className="about-me" data-scroll-to='projectsContainer' id='about'>
                         <div id="absec"className="about-section">
                             <div className="about-h1"><h1 className=''>About-me
                             </h1> <hr className='about-hr'/></div>

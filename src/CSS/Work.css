@@ -57,6 +57,7 @@ body{
     /* z-index: 10; */
     height: 100%;
     display:flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -160,12 +161,27 @@ grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid gray;
     border-radius: 10px;
 }
+
+.onhov{
+    width: 100%;
+    height: 100%;
+    /* z-index: 4; */
+    top: 20%;
+    position: absolute;
+    /* background-color: #ffff; */
+}
 .project-folder{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 20%;
+}
+.dark{
+    background-color: #0a192f;
+}
+.light{
+    background-color: #ffff;
 }
 .project-details{
     width: 90%;
@@ -209,19 +225,30 @@ a{
     color: #CCD6F6;
 }
 .project-card :hover{
-    a{
+    .project-title{
 
         color: #64FFDA;
     }
 }
-.project:hover{
+.source-code{
+    /* position: absolute; */
+    /* z-index: 3; */
+    /* bottom: 0; */
+    /* display: block; */
+}
+.project:hover,.project-card:hover{
     /* bottom: 5px; */
     transition: all 1s ease;
     cursor: pointer;
-    a{
+    a,h1{
 
         color: #64FFDA;
     }
+}
+a:hover{
+    cursor: pointer;
+    color: #64FFDA;
+    /* background-color: #ffff; */
 }
 @media only screen and (max-width:874px){
     .small-projects{
@@ -239,6 +266,9 @@ a{
         background-color: inherit;
         font-size: larger;
         background:none ;
+    }
+    .dark .light{
+        background-color: transparent;
     }
     #mip{
         padding-left: 20px;

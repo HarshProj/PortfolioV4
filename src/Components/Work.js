@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../CSS/Work.css'
 import githublogo from '../Assets/github.png'
 import p1 from '../Assets/arczone.png'
@@ -6,14 +6,40 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from '@fortawesome/fontawesome-free-solid'
 import p2 from '../Assets/text.PNG'
 export const Work = (props) => {
+  const[des,setDes]=useState('desc');
+  const[pdes,setPdes]=useState('project-desc');
 useEffect(()=>{
   if(props.to){
-    document.getElementsByClassName('project-desc')[0].style.backgroundColor='#0A192F';
-    document.getElementsByClassName('des')[0].style.backgroundColor='#0A192F';
+    setDes('des dark')
+    setPdes('project-desc dark')
+    const collection = document.querySelectorAll(".anch");
+    for (let i = 0; i < collection.length; i++) {
+      collection[i].style.color = "#CCD6F6";
     }
-    else{
-      document.getElementsByClassName('project-desc')[0].style.backgroundColor='#ffff';
-      document.getElementsByClassName('des')[0].style.backgroundColor='#ffff';
+    const spn = document.getElementsByTagName("span");
+    for (let i = 0; i < spn.length; i++) {
+  spn[i].style.color = "#8892B0";
+}
+const pn = document.getElementsByTagName("p");
+for (let i = 0; i < pn.length; i++) {
+  pn[i].style.color = "#8892B0";
+}
+}
+else{
+  setDes('des light')
+  setPdes('project-desc light')
+  const pn = document.getElementsByTagName("p");
+  for (let i = 0; i < pn.length; i++) {
+  pn[i].style.color = "black";
+  }
+    const spn = document.getElementsByTagName("span");
+    for (let i = 0; i < spn.length; i++) {
+    spn[i].style.color = "black";
+    }
+    const collection = document.querySelectorAll(".anch");
+  for (let i = 0; i < collection.length; i++) {
+  collection[i].style.color = "black";
+  }
   }
 },[props.to])
   return (
@@ -29,7 +55,7 @@ useEffect(()=>{
     <div className="project-info">
       <div className="project-title">
         <p>Featured Project </p>
-        <a href="">        <h1>Arc Zone</h1></a>
+        <h1 className='project-title'>Arc Zone</h1>
       </div>
       <div className="source-code">
        <div className="tech-used">
@@ -39,13 +65,14 @@ useEffect(()=>{
         <p>Express</p>
        </div>
        <div className="go-through">
-       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" target='_blanck' class="source-code"><img className='github' src={githublogo} loading="lazy" /></a>
+       </li>
+       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" target='_blanck' class="source-code"><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div>
       </div>
     </div>
-      <div className="project-desc">
+      <div className={pdes}>
       A full-stack e-commerce website designed for seamless online clothing purchases. Offers a comprehensive and user-centric e-commerce solution for online clothing retailers, built with cutting-edge technologies that prioritize performance, security, and scalability.
       </div>
       
@@ -55,7 +82,7 @@ useEffect(()=>{
     <div className="project-info pi"  >
       <div className="project-title project-title-p2">
         <p>Featured Project </p>
-       <a href="https://github.com/HarshProj/inotebook.git"><h1>Inotebook</h1></a> 
+      <h1 className='project-title'>Inotebook</h1> 
       </div>
       <div className="source-code">
        <div className="tech-used tech-used-p2">
@@ -65,13 +92,13 @@ useEffect(()=>{
         <p>Express</p>
        </div>
        <div className="go-through go-through-p2">
-       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class="source-code"><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class="source-code"><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div>
       </div>
     </div>
-      <div className=" des">
+      <div className={des}>
       This innovative to-do list application empowers users to conquer their daily tasks with a feature-rich and user-friendly interface.  Built with a focus on efficiency and organization.
       </div>
       <div className="img-div i1">
@@ -82,18 +109,23 @@ useEffect(()=>{
    </div>
    
    <div className="small-projects">
-   <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/Authentication.git" , "_blank");}}><div className="project-folder">
-      <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
+   <div className="project-card" >
+    <div className="onhov" onClick={()=>{window.open("https://authentication-2h63.onrender.com" , "_blank");}}></div>
+    
+    <div className="project-folder">
+      <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} className='fldr' /></div>
       
       <div className="folder-urls"><div id='mip' className="go-through mp">
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0"  target='_blanck' class=""><img className='github'class="" src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a>
+       </li>
 
        </div></div>
       </div>
     <div className='project-details'>
+
       <h3 className='project-link'>
-        <a href="https://github.com/HarshProj/Authentication.git" target='_blank'>Authentication</a>
+        <a href="https://github.com/HarshProj/Authentication.git" className="anch" target='_blank' >Authentication</a>
       </h3>
       <p>
       This Authentication App ensures secure user authentication and email verification. It efficiently manages user details using a modern tech stack.
@@ -104,18 +136,20 @@ useEffect(()=>{
         <span>Nodejs</span>
         <span>Justand</span>
        </div></div>
-    <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/Bharat-Intern-Task-II.git", "_blank");}}><div className="project-folder">
+    <div className="project-card" ><div className="project-folder">
+      
+    <div className="onhov" onClick={()=>{window.open("https://github.com/HarshProj/Bharat-Intern-Task-II.git", "_blank");}} ></div>
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div></div>
       </div>
     <div className='project-details'>
       <h3 className='project-link'>
-        <a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" target='_blank'>Blog App</a>
+        <a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" target='_blank' className="anch">Blog App</a>
       </h3>
       <p>
       This Blog App allows users to securely create, read, update, and delete blog posts, upload content, and interact with others, offering a robust platform for content sharing.
@@ -126,18 +160,21 @@ useEffect(()=>{
         <span>Nodejs</span>
         <span>Express</span>
        </div></div>
-       <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/FreeCode.git", "_blank");}}><div className="project-folder">
+       <div className="project-card" >
+        
+    <div className="onhov" onClick={()=>{window.open("https://github.com/HarshProj/FreeCode.git", "_blank");}} ></div>
+        <div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://github.com/HarshProj/FreeCode.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://github.com/HarshProj/FreeCode.git" class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div></div>
       </div>
     <div className='project-details'>
       <h3 className='project-link'>
-        <a href="https://github.com/HarshProj/FreeCode.git" target='_blank'>FreeCode</a>
+        <a href="https://github.com/HarshProj/FreeCode.git" target='_blank' className="anch">FreeCode</a>
       </h3>
       <p>
       This Code Compiler and Problem-Solving App enables users to write, compile, and run code in multiple programming languages.
@@ -147,18 +184,21 @@ useEffect(()=>{
         <span>codemirror</span>
         <span>JS</span>
        </div></div>
-    <div className="project-card" onClick={()=>{window.open("https://github.com/HarshProj/News-app.git", "_blank");}}><div className="project-folder">
+    <div className="project-card" >
+      
+    <div className="onhov" onClick={()=>{window.open("https://github.com/HarshProj/News-app.git", "_blank");}}></div>
+    <div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
-       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
 
        </div></div>
       </div>
     <div className='project-details'>
       <h3 className='project-link'>
-        <a href="https://google.com" target='_blank'>News App</a>
+        <a href="https://google.com" target='_blank' className="anch">News App</a>
       </h3>
       <p>
       This News App is a responsive and user-friendly platform built with React and REST API. It delivers real-time top news across various categories, ensuring users stay informed about the latest events.
