@@ -48,9 +48,9 @@ else{
     <div className="work-section">
 
    <div className="about-h1"><h1>Some Things I've Built</h1><hr className='about-hr'/></div>
-   <div className="project" onClick={()=>{window.open("https://github.com/HarshProj/Arc-Zone-client-side.git" , "_blank");}}>
+   <div className="project">
     <div className="img-div">
-      <img src={p1} alt="" className='img-project'/>
+      <img src={p1} alt="" className='img-project'  onClick={()=>{window.open("https://arc-zone-client-side.onrender.com" , "_blank");}}/>
     </div>
     <div className="project-info">
       <div className="project-title">
@@ -162,7 +162,7 @@ else{
        </div></div>
        <div className="project-card" >
         
-    <div className="onhov" onClick={()=>{window.open("https://github.com/HarshProj/FreeCode.git", "_blank");}} ></div>
+    <div className="onhov" onClick={()=>{window.open("https://free-code.vercel.app/", "_blank");}} ></div>
         <div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
