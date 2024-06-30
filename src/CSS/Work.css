@@ -165,10 +165,9 @@ grid-template-columns: 1fr 1fr 1fr;
 .onhov{
     width: 100%;
     height: 100%;
-    /* z-index: 4; */
-    top: 20%;
+    height: 80%;
+    bottom: 0;
     position: absolute;
-    /* background-color: #ffff; */
 }
 .project-folder{
     width: 90%;
@@ -236,11 +235,11 @@ a{
     /* bottom: 0; */
     /* display: block; */
 }
-.project:hover,.project-card:hover{
+.project-info:hover,.onhov:hover{
     /* bottom: 5px; */
     transition: all 1s ease;
     cursor: pointer;
-    a,h1{
+    .liveat,h1{
 
         color: #64FFDA;
     }

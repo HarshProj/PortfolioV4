@@ -5,7 +5,7 @@ import p1 from '../Assets/arczone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from '@fortawesome/fontawesome-free-solid'
 import p2 from '../Assets/text.PNG'
-import { ArrowSquareOut } from "@phosphor-icons/react";
+import { ArrowSquareOut,GithubLogo,InstagramLogo,LinkedinLogo,XLogo } from "@phosphor-icons/react";
 export const Work = (props) => {
   const[des,setDes]=useState('desc');
   const[pdes,setPdes]=useState('project-desc');
@@ -66,9 +66,9 @@ else{
         <p>Express</p>
        </div>
        <div className="go-through">
-       <li><a href="https://arc-zone-client-side.onrender.com" target='_blanck' class="source-code"><ArrowSquareOut size={32} /></a>
+       <li><a className="liveat" href="https://arc-zone-client-side.onrender.com" target='_blanck' class="source-code"><ArrowSquareOut size={32} /></a>
        </li>
-       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" target='_blanck' class="source-code"><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/Arc-Zone-client-side.git" target='_blanck' class="source-code"><GithubLogo size={28} /></a></li>
 
        </div>
       </div>
@@ -93,8 +93,8 @@ else{
         <p>Express</p>
        </div>
        <div className="go-through go-through-p2">
-       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class="source-code"><ArrowSquareOut size={32} /></a></li>
-       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class="source-code"><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a className="liveat" href="https://github.com/HarshProj/inotebook.git" target='_blanck' class="source-code"><ArrowSquareOut size={32} /></a></li>
+       <li><a href="https://github.com/HarshProj/inotebook.git" target='_blanck' class="source-code"><GithubLogo size={28} /></a></li>
 
        </div>
       </div>
@@ -117,8 +117,8 @@ else{
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} className='fldr' /></div>
       
       <div className="folder-urls"><div id='mip' className="go-through mp">
-       <li><a href="https://authentication-2h63.onrender.com"  target='_blanck' class=""><ArrowSquareOut size={32} /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' class=""><img className='github' src={githublogo} loading="lazy" /></a>
+       <li><a className="liveat" href="https://authentication-2h63.onrender.com"  target='_blanck' class=""><ArrowSquareOut size={32} /></a></li>
+       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' class=""><GithubLogo size={28} /></a>
        </li>
 
        </div></div>
@@ -143,8 +143,8 @@ else{
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
-       <li><a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a className="liveat" href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
+       <li><a href="https://github.com/HarshProj/Bharat-Intern-Task-II.git" target='_blanck' ><GithubLogo size={28} /></a></li>
 
        </div></div>
       </div>
@@ -168,9 +168,9 @@ else{
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
+       <li><a className="liveat" href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
        
-       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a href="https://github.com/HarshProj/FreeCode.git" target='_blanck' ><GithubLogo size={28} /></a></li>
 
        </div></div>
       </div>
@@ -193,8 +193,8 @@ else{
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
       
       <div className="folder-urls"><div id='mip'  className="go-through mp">
-       <li><a href="https://github.com/HarshProj/News-app.git" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
-       <li><a href="https://github.com/HarshProj/News-app.git" target='_blanck' ><img className='github' src={githublogo} loading="lazy" /></a></li>
+       <li><a className="liveat" href="https://github.com/HarshProj/News-app.git" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
+       <li><a href="https://github.com/HarshProj/News-app.git" target='_blanck' ><GithubLogo size={28} /></a></li>
 
        </div></div>
       </div>

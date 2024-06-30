@@ -57,14 +57,10 @@
 .contact-handles li{
     list-style: none;
 }
-.contact-handles img:hover{
+.contact-handles svg:hover{
     rotate: 360deg;
     width: 35px;
     transition: all 1s;
-}
-.contact-handles img{
-    width: 30px;
-    
 }
 .contact-h1{
     display: none;
