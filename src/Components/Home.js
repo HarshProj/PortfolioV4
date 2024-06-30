@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import '../CSS/Home.css'
 import {Skills} from './Skills'
 import githublogo from '../Assets/github.png'
 import { Work } from './Work'
 import { Contact } from './Contact'
 export const Home = (props) => {
-
+    const ref=useRef()
         useEffect(() => {
             const onScroll = () => {
                 const scrollCheck = window.scrollY < 10
@@ -67,10 +67,10 @@ export const Home = (props) => {
                     </div>
                 </div>
                 <div className="contact-handles email">
-                <ul class="" >
+                <ul class="mail-handle" >
                     
                     <li >
-                        {/* <a href="/" >hharshchauhan1@gmail.com</a> */}
+                        <a href="/" id='emailhandle' ref={ref}>hharshchauhan1@gmail.com</a>
                         </li>
                 </ul>
                 

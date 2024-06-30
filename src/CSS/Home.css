@@ -44,6 +44,7 @@
 .email{
     right: 0;
     height: 100%;
+    z-index: 0;
     justify-content: end;
 }
 .hr{
@@ -67,6 +68,20 @@
 }
 .contact-h1{
     display: none;
+}
+.mail-handle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail-handle li{
+    margin-right: 35px;
+    writing-mode: vertical-lr;
+}
+.mail-handle a:hover{
+    /* rotate: 360deg; */
+    margin-bottom: 30px;
+    transition: all 1s;
 }
 @media only screen and (max-width:722px) {
     .contact-handles{
@@ -103,6 +118,10 @@
     }
     #about{
         height: 100%;
+    }
+    .email{
+        margin-right: 35px;
+       display: none;
     }
 }
 
