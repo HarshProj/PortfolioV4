@@ -5,6 +5,9 @@ import p1 from '../Assets/arczone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from '@fortawesome/fontawesome-free-solid'
 import p2 from '../Assets/text.PNG'
+
+import { motion } from "framer-motion"
+import {fadeIn} from "../variants"
 import { ArrowSquareOut,GithubLogo,InstagramLogo,LinkedinLogo,XLogo } from "@phosphor-icons/react";
 export const Work = (props) => {
   const[des,setDes]=useState('desc');
@@ -49,7 +52,10 @@ else{
     <div className="work-section">
 
    <div className="about-h1"><h1>Some Things I've Built</h1><hr className='about-hr'/></div>
-   <div className="project">
+   <motion.div 
+    variants={fadeIn("up",0.4)}
+    initial="hidden"
+    whileInView={"show"}viewport={{once:false,amount:0.7}} className="project">
     <div className="img-div">
       <img src={p1} alt="" className='img-project'  onClick={()=>{window.open("https://arc-zone-client-side.onrender.com" , "_blank");}}/>
     </div>
@@ -77,8 +83,11 @@ else{
       A full-stack e-commerce website designed for seamless online clothing purchases. Offers a comprehensive and user-centric e-commerce solution for online clothing retailers, built with cutting-edge technologies that prioritize performance, security, and scalability.
       </div>
       
-   </div>
-   <div id ="pp1"className="project p1" onClick={()=>{window.open("https://github.com/HarshProj/inotebook.git" , "_blank");}}>
+   </motion.div>
+   <motion.div 
+    variants={fadeIn("up",0.4)}
+    initial="hidden"
+    whileInView={"show"}viewport={{once:false,amount:0.7}} id ="pp1"className="project p1" onClick={()=>{window.open("https://github.com/HarshProj/inotebook.git" , "_blank");}}>
    
     <div className="project-info pi"  >
       <div className="project-title project-title-p2">
@@ -105,7 +114,7 @@ else{
       <div className="img-div i1">
       <img src={p2} alt="" className='img-project'/>
     </div>
-   </div>
+   </motion.div>
    <div className="about-h1"><h1>Other Noteworthy Projects</h1> <hr className='about-hr'/>
    </div>
    

@@ -1,13 +1,20 @@
 import React from 'react'
 import '../CSS/Skills.css'
+import { motion } from "framer-motion"
+import {fadeIn} from "../variants"
 export const Skills = () => {
   return (
     <>
-    <div className="Skills-box" id='skills'>
-    <div className="about-h1"> <h1>Here are Some skills I persue</h1> <hr className='about-hr'/></div>
+    <motion.div 
+    variants={fadeIn("up",0.2)}
+    initial="hidden"
+    whileInView={"show"}viewport={{once:false,amount:0.7}}  className="Skills-box" id='skills'>
+    <div
+    className="about-h1"> <h1>Here are Some skills I persue</h1> <hr className='about-hr'/></div>
    
-    <div class="aboutdiv">
-            <div class="rank">
+    <div
+    class="aboutdiv">
+            <div  class="rank">
                 <div class="lang" id="skill1"></div>
                 <p>C++</p>
             </div>
@@ -46,7 +53,7 @@ export const Skills = () => {
                 </p>
             </div>
         </div>
-    </div>
+    </motion.div>
     </>
   )
 }
