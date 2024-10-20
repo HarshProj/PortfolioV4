@@ -5,10 +5,8 @@ import {fadeIn} from "../variants"
 export const Skills = () => {
   return (
     <>
-    <motion.div 
-    variants={fadeIn("up",0.2)}
-    initial="hidden"
-    whileInView={"show"}viewport={{once:false,amount:0.7}}  className="Skills-box" id='skills'>
+    <div 
+    initial="hidden" className="Skills-box" id='skills'>
     <div
     className="about-h1"> <h1>Here are Some skills I persue</h1> <hr className='about-hr'/></div>
    
@@ -53,7 +51,7 @@ export const Skills = () => {
                 </p>
             </div>
         </div>
-    </motion.div>
+    </div>
     </>
   )
 }

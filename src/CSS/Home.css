@@ -149,7 +149,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
     /* border: 2px solid black; */
+    
+    animation: showfade;
+    animation-timeline: view(70% 5% );
 }
 .about-me p{
     /* color: gray; */

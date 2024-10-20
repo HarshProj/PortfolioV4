@@ -14,7 +14,7 @@ function App() {
   const [op,setop]=useState("op");
   const[cl,setcl]=useState("cl")
   const [to,setto]=useState(true);
-  const [logob, setlogo] = useState(logo)
+  const [logob, setlogo] = useState(logo2)
   const handleclick=()=>{
     const x=document.getElementsByTagName('body')
     if(to){

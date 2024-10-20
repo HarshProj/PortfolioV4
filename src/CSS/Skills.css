@@ -2,15 +2,29 @@
     width: 50%;
     height: 100%;
     padding-top: 20px;
+    animation: showfade;
+    animation-timeline: view(90% 5% );
+}
+hr{
+    animation: showfade;
+    animation-timeline: view(70% 5% );
 }
 .aboutdiv{
     display: flex;
     justify-content: center;
     height: 100%;
-    flex-wrap: wrap;
     width: 100%;
+    flex-wrap: wrap;
 }
-
+@keyframes showfade{
+    from{
+        
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        transform: translateY(0) scale(1);
+    }
+}
 .rank div:hover{
     box-shadow: black 5px 5px 15px;
     /* width: 25%; */

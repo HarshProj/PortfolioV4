@@ -120,15 +120,40 @@ else{
    
    <div className="small-projects">
    <div className="project-card" >
-    <div className="onhov" onClick={()=>{window.open("https://authentication-2h63.onrender.com" , "_blank");}}></div>
+    <div className="onhov" onClick={()=>{window.open("https://customformbuilder-harshprojs-projects.vercel.app/" , "_blank");}}></div>
     
     <div className="project-folder">
       <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} className='fldr' /></div>
       
       <div className="folder-urls"><div id='mip' className="go-through mp">
-       <li><a className="liveat" href="https://authentication-2h63.onrender.com"  target='_blanck' class=""><ArrowSquareOut size={32} /></a></li>
-       <li><a href="https://www.linkedin.com/in/harsh-chauhan-0a34b01a0" target='_blanck' class=""><GithubLogo size={28} /></a>
+       <li><a className="liveat" href="https://customformbuilder-harshprojs-projects.vercel.app/"  target='_blanck' class=""><ArrowSquareOut size={32} /></a></li>
+       <li><a href="https://github.com/HarshProj/Alter.git" target='_blanck' class=""><GithubLogo size={28} /></a>
        </li>
+
+       </div></div>
+      </div>
+    <div className='project-details'>
+
+      <h3 className='project-link'>
+        <a href="https://customformbuilder-harshprojs-projects.vercel.app/" className="anch" target='_blank' >Form Builder</a>
+      </h3>
+      <p>
+      Allowing users to design and customize their forms with ease. One can save forms to a MongoDB database via a RESTful API, ensuring persistent data storage and seamless form management.
+      </p></div>
+    <div className="te1">
+        <span>React js</span>
+        <span>MongoDB</span>
+        <span>Nodejs</span>
+        <span>Justand</span>
+       </div></div>
+    <div className="project-card" ><div className="project-folder">
+      
+    <div className="onhov" onClick={()=>{window.open("https://github.com/HarshProj/Authentication.git", "_blank");}} ></div>
+      <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
+      
+      <div className="folder-urls"><div id='mip'  className="go-through mp">
+       <li><a className="liveat" href="https://github.com/HarshProj/Authentication.git" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
+       <li><a href="https://github.com/HarshProj/Authentication.git" target='_blanck' ><GithubLogo size={28} /></a></li>
 
        </div></div>
       </div>

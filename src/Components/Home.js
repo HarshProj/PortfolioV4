@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 import '../CSS/Home.css'
 import {Skills} from './Skills'
-import githublogo from '../Assets/github.png'
 import { Work } from './Work'
 import { Contact } from './Contact'
 import { GithubLogo,InstagramLogo,LinkedinLogo,XLogo } from "@phosphor-icons/react";

@@ -5,12 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const div=document.getElementById('root');
-div.addEventListener("mousemove", function(event) {
-  let x = event.offsetX;
-  let y = event.offsetY;
-  div.style.background= `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
-});
+// const div=document.getElementById('root');
+// div.addEventListener("mousemove", function(event) {
+//   let x = event.offsetX;
+//   let y = event.offsetY;
+//   div.style.background= `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+// });
 root.render(
   <React.StrictMode>
     <App />
