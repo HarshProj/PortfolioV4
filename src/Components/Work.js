@@ -244,6 +244,30 @@ else{
         <span>Rest Api</span>
         <span>News Api</span>
        </div></div>
+    <div className="project-card" >
+      
+    <div className="onhov" onClick={()=>{window.open("https://sudoku-solver-rust.vercel.app/", "_blank");}}></div>
+    <div className="project-folder">
+      <div className="folder"><FontAwesomeIcon icon={faFolder} style={{width:'100%',height:"100%"}} /></div>
+      
+      <div className="folder-urls"><div id='mip'  className="go-through mp">
+       <li><a className="liveat" href="https://sudoku-solver-rust.vercel.app/" target='_blanck' ><ArrowSquareOut size={32} /></a></li>
+       <li><a href="https://github.com/HarshProj/Sudoku-Solver.git" target='_blanck' ><GithubLogo size={28} /></a></li>
+
+       </div></div>
+      </div>
+    <div className='project-details'>
+      <h3 className='project-link'>
+        <a href="https://google.com" target='_blank' className="anch">Suduko Solver</a>
+      </h3>
+      <p>
+      A React app that solves Sudoku puzzles instantly using a backtracking algorithm with an intuitive interface.
+      </p></div>
+    <div className="te1">
+        <span>React</span>
+        <span>Rest Api</span>
+        <span>News Api</span>
+       </div></div>
    </div>
     </div>
     

@@ -6,7 +6,7 @@
     animation-timeline: view(90% 5% );
 }
 hr{
-    animation: showfade;
+    animation: showfade ;
     animation-timeline: view(70% 5% );
 }
 .aboutdiv{

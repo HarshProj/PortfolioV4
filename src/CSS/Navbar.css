@@ -177,13 +177,15 @@
         }
         .togglemenu{
             display: flex;
-            opacity: 0.5;
+            opacity: 0.7;
             background-color: black;
             position: absolute;
             width: 100%;
             align-items: center;
             padding-top: 10rem;
             gap: 5rem;
+            /* position: ; */
+            /* overflow: scroll; */
             z-index: 1;
             flex-direction: column;
            
